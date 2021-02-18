@@ -451,6 +451,7 @@ nav #menu li a:hover {
       float: right;
       transition: all 0.3s ease-out;
       visibility: hidden;
+      pointer-events: none;
       opacity: 0;
 }
 
@@ -629,7 +630,7 @@ nav #menu li a:hover {
       opacity: 1;
 }
 
-@media(max-width: 730px) {
+@media(max-width: 729px) {
       #toggle {
             visibility: visible;
             opacity: 1;
