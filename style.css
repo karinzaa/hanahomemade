@@ -517,16 +517,39 @@ nav #menu li a:hover {
       transform: translate3d(-50%,-50%,0) scale3d(1,1,1)
 }
 
-.close-btn {
-      position: absolute;
-      font-size: 30px;
-      right: 26px;
-      font-weight: 300;
-      z-index: 2;
-      cursor: pointer;
-      top: 4px;
-      line-height: 80px;
+@media(min-width: 729px) {
+      .close-btn {
+            position: absolute;
+            font-size: 30px;
+            right: 26px;
+            font-weight: 300;
+            z-index: 2;
+            cursor: pointer;
+            top: 4px;
+            line-height: 80px;
+            visibility: hidden;
+            pointer-events: none;
+      }
 }
+
+
+@media(max-width: 730px) {
+      .close-btn {
+            position: absolute;
+            font-size: 30px;
+            right: 26px;
+            font-weight: 300;
+            z-index: 2;
+            cursor: pointer;
+            top: 4px;
+            line-height: 80px;
+            visibility: visible;
+            pointer-events: all;
+      }
+}
+
+
+
 
 #resize {
       z-index: 1;
