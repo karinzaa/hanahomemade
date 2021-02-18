@@ -299,7 +299,7 @@ h5.footer {
   }
 
 .black {
-      filter: brightness(80%);
+      filter: brightness(75%);
 }
   
 .center {
@@ -724,9 +724,9 @@ nav #menu li a:hover {
 /*--------------- scroll down icon animation --------------- */
 .scroll-down {
       position: fixed;
-      left: 47%;
-      transform: translateX(-10px);
-      top: 78vh;
+      left: 48%;
+      transform: translateX(-48px);
+      top: 75%;
       display: block;
       align-items: center;
       font-size: 35px;
@@ -736,7 +736,7 @@ nav #menu li a:hover {
       width: 15px;
       height: 15px;
       -webkit-transform: translate(-50%, 0) rotate(0deg);
-      animation: arrowAnimation 1s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+      animation: arrowAnimation 1.5s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 }
 
 @keyframes arrowAnimation {
