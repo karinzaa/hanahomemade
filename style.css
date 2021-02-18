@@ -544,13 +544,28 @@ nav #menu li a:hover {
 #resize #menu {
       height: 100px;
       position: absolute;
-      left: 40%;
+      left: 36%;
       top: auto;
       font-size: 60px;
-      transform: translateX(-40%);
+      transform: translateX(-36%);
       text-align: center;
       display: table-cell;
       vertical-align: center;
+}
+
+@media(max-width: 300px) {
+      
+      #resize #menu {
+            height: 100px;
+            position: absolute;
+            left: 20%;
+            top: auto;
+            font-size: 30px;
+            transform: translateX(-10%);
+            text-align: center;
+            display: table-cell;
+            vertical-align: center;
+      } 
 }
 
 #resize #menu li {
@@ -563,12 +578,22 @@ nav #menu li a:hover {
 }
 
 #resize li:nth-child(1) {
-      margin-top: 100%;
+      margin-top: 25vh;
 }
 
 #resize #menu li a {
       color: #fff;
       font-weight: 500;
+      font-size: 25px;
+}
+
+@media(max-width: 300px) {
+      
+      #resize #menu li a {
+      color: #fff;
+      font-weight: 500;
+      font-size: 20px;
+      }   
 }
 
 #resize #menu li a:hover {
