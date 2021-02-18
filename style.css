@@ -607,7 +607,7 @@ nav #menu li a:hover {
       opacity: 1;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 730px) {
       #toggle {
             visibility: visible;
             opacity: 1;
@@ -633,7 +633,7 @@ nav #menu li a:hover {
       }
 }
 
-@media(min-width: 768px) {
+@media(min-width: 730px) {
       #resize {
             visibility: hidden !important;
       }
