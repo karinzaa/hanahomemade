@@ -723,12 +723,13 @@ nav #menu li a:hover {
 
 /*--------------- scroll down icon animation --------------- */
 .scroll-down {
-      position: absolute;
-      left: 50%;
-      bottom: 100px;
+      position: fixed;
+      left: 47%;
+      transform: translateX(-10px);
+      top: 78vh;
       display: block;
-      text-align: center;
-      font-size: 25px;
+      align-items: center;
+      font-size: 35px;
       z-index: 0;
       text-decoration: none;
       text-shadow: 0;
