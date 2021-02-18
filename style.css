@@ -545,7 +545,7 @@ nav #menu li a:hover {
       height: 100px;
       position: absolute;
       left: 40%;
-      top: 15vh;
+      top: auto;
       font-size: 60px;
       transform: translateX(-40%);
       text-align: center;
