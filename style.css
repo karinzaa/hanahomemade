@@ -10,6 +10,15 @@ html, body {
       color: #fff !important;
 }
 
+#loader {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      z-index: 1;
+      overflow: visible;
+      background: rgb(0, 0, 0) url('https://i.gifer.com/6oa.gif') no-repeat center center;
+}
+
 p {
       font-family: "Niramit", sans-serif;
 }

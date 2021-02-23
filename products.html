@@ -40,7 +40,7 @@
 
 <body>
       <!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
+      <div rel="preload" as="script" id="fb-root"></div>
       <script>
         window.fbAsyncInit = function() {
           FB.init({
@@ -65,6 +65,7 @@
         logged_in_greeting="ยินดีต้อนรับเข้าสู่ HANA Homemade ค่า ท่านสามารถสอบถามหรือสั่งซื่อสินค้าได้นะคะ"
         logged_out_greeting="ยินดีต้อนรับเข้าสู่ HANA Homemade ค่า ท่านสามารถสอบถามหรือสั่งซื่อสินค้าได้นะคะ">
       </div>
+      <div id="loader"></div>
       <div class="wrapper">
 
             <!--------------- navbar starts here --------------->
@@ -73,7 +74,7 @@
                   <!--------------- navbar starts here --------------->
                   <nav>
                         <span id="brand" class="circleScaleBtn2 logo" onclick="location.href='index.html'">
-                              <img width="auto" height="55" src="pic/HanaLogoWeb.png"></img>  
+                              <img rel="preload" as="image" width="auto" height="55" src="pic/HanaLogoWeb.png"></img>  
                         </span>
       
                         <ul id="menu">
@@ -132,7 +133,7 @@
                                    
                                     <h2 class="wow fadeInUp" data-wow-delay="0.4s"><i class="fas fa-birthday-cake"></i> Toffee Cake</h2>
                                     <h4 class="bage wow fadeInUp" data-wow-delay="0.5s"><span class="badge badge-danger"><i class="fas fa-bahai"></i> ใหม่ !</span></h4>
-                                    <img class="wow fadeInUp center border border-light round" data-wow-delay="0.5s" src="pic/toffeecake.jpg" alt="Toffee Cake" style="width: 100%; height: auto">
+                                    <img rel="preload" as="image" class="wow fadeInUp center border border-light round" data-wow-delay="0.5s" src="pic/toffeecake.jpg" alt="Toffee Cake" style="width: 100%; height: auto">
                                     <br></br>
                                     <p class="wow fadeInUp" data-wow-delay="0.5s">
                                           เค้กทอฟฟี่เข้มข้มหอมมันถึงเครื่องถึงรสกาเฟผสมโกโก้ 
@@ -142,7 +143,7 @@
                                     
                                     <h2 class="wow fadeInUp" data-wow-delay="0.4s"><i class="fas fa-birthday-cake"></i> Japanese Egg Cake</h2>
                                     <h4 class="bage wow fadeInUp" data-wow-delay="0.5s"><span class="badge badge-warning"><i class="far fa-thumbs-up"></i> ขายดี</span></h4>
-                                    <img class="wow fadeInUp center border border-light round" data-wow-delay="0.5s" src="pic/eggcake.jpg" alt="Japanese Egg Cake" style="width: 100%; height: auto">
+                                    <img rel="preload" as="image" class="wow fadeInUp center border border-light round" data-wow-delay="0.5s" src="pic/eggcake.jpg" alt="Japanese Egg Cake" style="width: 100%; height: auto">
                                     <br></br>
                                     <p class="wow fadeInUp" data-wow-delay="0.5s">
                                          เค้กไข่ญี่ปุ่นหอมละมุนนุ่มละลายรับรองจะต้องติดใจชิ้นเดียวไม่เคยพอ
@@ -152,7 +153,7 @@
 
                                     <h2 class="wow fadeInUp" data-wow-delay="0.4s"><i class="fas fa-cookie-bite"></i> Whole Grains Cookie</h2>
                                     <h4 class="bage wow fadeInUp" data-wow-delay="0.5s"><span class="badge badge-success"><i class="fas fa-heartbeat"></i> ดีต่อสุขภาพ</span></h4>
-                                    <img class="wow fadeInUp center border border-light round" data-wow-delay="0.5s" src="pic/cookie.jpg" alt="Cookie" style="width: 100%; height: auto">
+                                    <img  rel="preload" as="image" class="wow fadeInUp center border border-light round" data-wow-delay="0.5s" src="pic/cookie.jpg" alt="Cookie" style="width: 100%; height: auto">
                                     <br></br>
                                     <p class="wow fadeInUp" data-wow-delay="0.5s">
                                          คุกกี้ธัญญาพืชสำหรับผู้ที่รักสุขภาพด้วยธัญญาพืช 9 ชนิด
@@ -188,7 +189,7 @@
                         <div class="info">
                               <div class="row">
                                     <div class="col-md-4" id="personal">
-                                          <h5 class="wow fadeInUp footer" data-wow-delay="0.2s"><img width="auto" height="55" src="pic/HanaLogoWeb.png"></img>  </h5>
+                                          <h5 class="wow fadeInUp footer" data-wow-delay="0.2s"><img rel="preload" as="image" width="auto" height="55" src="pic/HanaLogoWeb.png"></img>  </h5>
                                           <p class="wow fadeInUp list badge badge-pill circleScaleBtn2" type="button" onclick="location.href='https://creativecommons.org/publicdomain/zero/1.0/'"><i class="fab fa-creative-commons"></i> <i class="fab fa-creative-commons-zero"></i> <i class="fab fa-creative-commons-share"></i></p>
                                     </div>
       
@@ -197,7 +198,7 @@
                                     <div class="col-md-8" id="media">
       
                                           <ul>
-                                                <li class="wow fadeInUp" data-wow-delay="0.4s"> <p class="wow fadeInUp list1 badge badge-pill badge-light circleScaleBtn2" type="button" onclick="location.href='https://www.facebook.com/HANAHomeBakery/'"><i class="fab fa-facebook"> <img width="auto" height="30" src="pic/HanaLogoWeb.png"></img></i> </p> </li>
+                                                <li class="wow fadeInUp" data-wow-delay="0.4s"> <p class="wow fadeInUp list1 badge badge-pill badge-light circleScaleBtn2" type="button" onclick="location.href='https://www.facebook.com/HANAHomeBakery/'"><i class="fab fa-facebook"> <img rel="preload" as="image" width="auto" height="30" src="pic/HanaLogoWeb.png"></img></i> </p> </li>
                                           </ul>
                                           <p class="wow fadeInUp list2 badge badge-pill badge-light circleScaleBtn2" type="button" onclick="location.href='termsofservice.html'"><i class="fas fa-info-circle"></i> ข้อกำหนด นโยบายความเป็นส่วนตัว</p>
       
@@ -236,6 +237,30 @@
             });
 
             // navigation ends here
+
+            var loader;
+
+            function loadNow(opacity) {
+                  if (opacity <= 0) {
+                        displayContent();
+                        } else {
+                              loader.style.opacity = opacity;
+                              window.setTimeout(function() {
+                                    loadNow(opacity - 0.05);
+                              }, 50);
+                        }
+                  }
+
+            function displayContent() {
+                  loader.style.display = 'none';
+                  document.getElementById('content').style.display = 'block';
+            }
+
+            document.addEventListener("DOMContentLoaded", function() {
+                  loader = document.getElementById('loader');
+                  loadNow(1);
+            });
+
 
             // nav animation
 

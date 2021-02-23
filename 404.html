@@ -35,12 +35,13 @@
 </head>
 
 <body>
+      <div id="loader"></div>
       <div class="wrapper">
 
             <!--------------- navbar starts here --------------->
             <nav>
                   <span id="brand" class="circleScaleBtn2 logo" onclick="location.href='index.html'">
-                        <img width="auto" height="55" src="pic/HanaLogoWeb.png"></img>  
+                        <img rel="preload" as="image" width="auto" height="55" src="pic/HanaLogoWeb.png"></img>  
                   </span>
             </nav>
 
@@ -48,7 +49,7 @@
 
             <!--------------- hero section starts here --------------->
 
-            <div class="bgimg404 wow fadeInUp">
+            <div rel="preload" as="image" class="bgimg404 wow fadeInUp">
                   <div class="hero">
                         <div class="header">
 
@@ -99,6 +100,30 @@
             });
 
             // navigation ends here
+
+            var loader;
+
+            function loadNow(opacity) {
+                  if (opacity <= 0) {
+                        displayContent();
+                        } else {
+                              loader.style.opacity = opacity;
+                              window.setTimeout(function() {
+                                    loadNow(opacity - 0.05);
+                              }, 50);
+                        }
+                  }
+
+            function displayContent() {
+                  loader.style.display = 'none';
+                  document.getElementById('content').style.display = 'block';
+            }
+
+            document.addEventListener("DOMContentLoaded", function() {
+                  loader = document.getElementById('loader');
+                  loadNow(1);
+            });
+
 
             // nav animation
 

@@ -40,7 +40,7 @@
       
       <body>
       <!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
+      <div rel="preload" as="script" id="fb-root"></div>
       <script>
         window.fbAsyncInit = function() {
           FB.init({
@@ -65,12 +65,13 @@
         logged_in_greeting="ยินดีต้อนรับเข้าสู่ HANA Homemade ค่า ท่านสามารถสอบถามหรือสั่งซื่อสินค้าได้นะคะ"
         logged_out_greeting="ยินดีต้อนรับเข้าสู่ HANA Homemade ค่า ท่านสามารถสอบถามหรือสั่งซื่อสินค้าได้นะคะ">
       </div>
+      <div id="loader"></div>
             <div class="wrapper">
       
                   <!--------------- navbar starts here --------------->
                   <nav>
                         <span id="brand" class="circleScaleBtn2 logo" onclick="location.href='index.html'">
-                              <img width="auto" height="55" src="pic/HanaLogoWeb.png"></img>  
+                              <img  rel="preload" as="image" width="auto" height="55" src="pic/HanaLogoWeb.png"></img>  
                         </span>
       
                         <ul id="menu">
@@ -113,7 +114,7 @@
                                     <p class="wow fadeInUp" data-wow-delay="0.5s">
                                            ในช่วนที่ต้องกักตัวอยู่บ้านก็เกิดความอยากจะที่ทำขนมกินกันเองในครอบครัวขึ้นมาจอนทำมีความชำนาญทางเราเลยอยากแบ่งปันความสุขให้กับทุกๆคนบ้าง
                                     </p>
-                                    <img class="wow fadeInUp center border border-light round" data-wow-delay="0.6s" src="pic/Owner.png" alt="Owner" style="width: 100%; height: auto">
+                                    <img rel="preload" as="image" class="wow fadeInUp center border border-light round" data-wow-delay="0.6s" src="pic/Owner.png" alt="Owner" style="width: 100%; height: auto">
                               </div>
                         </div>
                         
@@ -146,7 +147,7 @@
                                     <p class="wow fadeInUp" data-wow-delay="0.6s">
                                          เรานึกถึงลูกค้าทุกท่านเสมือนคนในครอบครัวเราจะใช้ของที่สดใหมและเราจะส่งให้ท่านทันทีเมื่อทำ order เสร็จเพื่อแบ่งปันความสดใหม่ให้กับทุกๆคน
                                     </p>
-                                    <img class="wow fadeInUp center border border-light round" data-wow-delay="0.6s" src="pic/Fresh.jpg" alt="เราทำสดใหม่ทุก order" style="width: 100%; height: auto">
+                                    <img rel="preload" as="image" class="wow fadeInUp center border border-light round" data-wow-delay="0.6s" src="pic/Fresh.jpg" alt="เราทำสดใหม่ทุก order" style="width: 100%; height: auto">
                                     <br></br>
                               </div>
 
@@ -156,7 +157,7 @@
                                     <p class="wow fadeInUp" data-wow-delay="0.6s">
                                          เรานึกถึงลูกค้าทุกท่านเสมือนคนในครอบครัวเราจะใช้ของที่มีคุณภาพและไม่ใส่วัตถุกันเสียเพื่อแบ่งปันสุขภาพที่ดีให้กับทุกๆคน
                                     </p>
-                                    <img class="wow fadeInUp center border border-light round" data-wow-delay="0.6s" src="pic/Organic.jpg" alt="เราใช้แต่ของคุณภาพไม่ใส่วัตถุกันเสีย" style="width: 100%; height: auto">
+                                    <img rel="preload" as="image" class="wow fadeInUp center border border-light round" data-wow-delay="0.6s" src="pic/Organic.jpg" alt="เราใช้แต่ของคุณภาพไม่ใส่วัตถุกันเสีย" style="width: 100%; height: auto">
 
                               </div>
 
@@ -190,7 +191,7 @@
                         <div class="info">
                               <div class="row">
                                     <div class="col-md-4" id="personal">
-                                          <h5 class="wow fadeInUp footer" data-wow-delay="0.2s"><img width="auto" height="55" src="pic/HanaLogoWeb.png"></img>  </h5>
+                                          <h5 class="wow fadeInUp footer" data-wow-delay="0.2s"><img rel="preload" as="image" width="auto" height="55" src="pic/HanaLogoWeb.png"></img>  </h5>
                                           <p class="wow fadeInUp list badge badge-pill circleScaleBtn2" type="button" onclick="location.href='https://creativecommons.org/publicdomain/zero/1.0/'"><i class="fab fa-creative-commons"></i> <i class="fab fa-creative-commons-zero"></i> <i class="fab fa-creative-commons-share"></i></p>
                                     </div>
       
@@ -199,7 +200,7 @@
                                     <div class="col-md-8" id="media">
       
                                           <ul>
-                                                <li class="wow fadeInUp" data-wow-delay="0.4s"> <p class="wow fadeInUp list1 badge badge-pill badge-light circleScaleBtn2" type="button" onclick="location.href='https://www.facebook.com/HANAHomeBakery'"><i class="fab fa-facebook"> <img width="auto" height="30" src="pic/HanaLogoWeb.png"></img></i> </p> </li>
+                                                <li class="wow fadeInUp" data-wow-delay="0.4s"> <p class="wow fadeInUp list1 badge badge-pill badge-light circleScaleBtn2" type="button" onclick="location.href='https://www.facebook.com/HANAHomeBakery'"><i class="fab fa-facebook"> <img rel="preload" as="image" width="auto" height="30" src="pic/HanaLogoWeb.png"></img></i> </p> </li>
                                           </ul>
                                           <p class="wow fadeInUp list2 badge badge-pill badge-light circleScaleBtn2" type="button" onclick="location.href='termsofservice.html'"><i class="fas fa-info-circle"></i> ข้อกำหนด นโยบายความเป็นส่วนตัว</p>
       
@@ -265,6 +266,30 @@
             });
 
             // navigation ends here
+
+            var loader;
+
+            function loadNow(opacity) {
+                  if (opacity <= 0) {
+                        displayContent();
+                        } else {
+                              loader.style.opacity = opacity;
+                              window.setTimeout(function() {
+                                    loadNow(opacity - 0.05);
+                              }, 50);
+                        }
+                  }
+
+            function displayContent() {
+                  loader.style.display = 'none';
+                  document.getElementById('content').style.display = 'block';
+            }
+
+            document.addEventListener("DOMContentLoaded", function() {
+                  loader = document.getElementById('loader');
+                  loadNow(1);
+            });
+
 
             // nav animation
 
