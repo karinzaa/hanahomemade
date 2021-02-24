@@ -164,7 +164,7 @@
                                           <span class="badge badge-light">Chart</span> แบ่งตามสถานะงานของ orders ณ ขณะนี้</p>
                                           <p class="wow fadeInUp" data-wow-delay="0.5s">
                                                 <p class="wow fadeInUp" data-wow-delay="0.5s"><span class="badge badge-pill list2"><i class="far fa-bell ripple2"></i> Lasted update</span> 
-                                                      <i class="fas fa-calendar-day"></i> <span id="time"></span>
+                                                      <i class="fas fa-calendar-day"></i> <span id="time"></span> <i class="fas fa-hourglass-half"></i> <span id="dataSeq"></span>
                                                 </p>
                                                 <div class="row wow fadeInUp" data-wow-delay="0.5s">
                                                       <div class="col-sm-12">
@@ -484,6 +484,13 @@
             var time = Time.map(function(d) {return d.Time});
             time = time.slice(0,-2);
             document.getElementById("time").innerHTML = time;
+            }
+
+            d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vTtJPwt9bRcpw5A4A1vDuNYdz9PaZm6NUMPO3TAY30LDlpld5JJu2As2YMhadHlVR5s3lekkg6daALl/pub?gid=741328053&single=true&output=csv').then(makeDataSeq);
+            function makeDataSeq(DataSeq) {
+            var dataSeq = DataSeq.map(function(d) {return d.DataSeq});
+            dataSeq = dataSeq.slice(0,-2);
+            document.getElementById("dataSeq").innerHTML = dataSeq;
             }
            
             d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vTtJPwt9bRcpw5A4A1vDuNYdz9PaZm6NUMPO3TAY30LDlpld5JJu2As2YMhadHlVR5s3lekkg6daALl/pub?gid=741328053&single=true&output=csv').then(makeip);

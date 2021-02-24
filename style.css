@@ -535,7 +535,7 @@ nav #menu li a:hover {
             font-weight: 300;
             z-index: 2;
             cursor: pointer;
-            top: px;
+            top: 4px;
             line-height: 80px;
             visibility: hidden;
             pointer-events: none;
@@ -565,7 +565,7 @@ nav #menu li a:hover {
       z-index: 1;
       top: 0px;
       position: fixed;
-      background: #0f0f0fe5;
+      background: #0f0f0fe5 url('https://shkspr.mobi/blog/wp-content/uploads/2015/02/loop2.gif') no-repeat center center;
       width: 100%;
       height: 100%;
       visibility: hidden;
