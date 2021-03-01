@@ -29,6 +29,12 @@ a {
       text-transform: none;
 }
 
+.Sriracha {
+      font-family: "Sriracha", sans-serif !important;
+      text-decoration: none;
+      text-transform: none;
+}
+
 h2.price {
       font-family: "Niramit", sans-serif;
       color: #fff !important;
@@ -56,6 +62,11 @@ h4.bage{
 h4.list {
       font-size: 25px; 
       color: rgb(255, 255, 255) !important;
+      font-family: "Niramit", sans-serif !important;
+}
+
+.small{
+      font-size: 22px; 
       font-family: "Niramit", sans-serif !important;
 }
 
