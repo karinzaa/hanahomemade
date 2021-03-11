@@ -164,6 +164,13 @@ p.list2 {
       font-family: "Niramit", sans-serif !important;
 }
 
+p.list3 {
+      font-size: 15px; 
+      background-color: rgba(255, 255, 255, 0.255);
+      color: rgb(0, 0, 0) !important;
+      font-family: "Niramit", sans-serif !important;
+}
+
 i.list {
       color: rgb(255, 255, 255) !important;
       font-family: "Niramit", sans-serif !important;
@@ -581,8 +588,11 @@ nav #menu li a:hover {
       visibility: hidden;
       opacity: 0;
       transition: all 0.25s ease-in-out;
+      transition: 400ms ease-in-out;
       
 }
+
+      
 
 #resize #menu {
       height: 100%;
@@ -1090,6 +1100,32 @@ textarea:focus {
             width: 98%;
       }
 }
+
+    
+.cookie-container {
+      z-index: 2;
+      position: fixed;
+      bottom: -100%;
+      left: 0;
+      right: 0;
+      background: #ffffffe0;
+      border-radius: 10px 10px 0px 0px;
+      color: #000000;
+      padding: 0 32px;
+      transition: 400ms ease-in-out;
+}
+    
+.cookie-container.active {
+      bottom: 0;
+}
+    
+.cookie-container a {
+      color: #000000;
+}
+
+.cookie-btn {
+      cursor: pointer;
+    }
 
 /*--------------- project page --------------- */
 
