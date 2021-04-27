@@ -9,6 +9,28 @@ html, body {
       background: #000000 !important;
       color: #fff !important;
 }
+::-webkit-scrollbar {
+      width: 14px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f100;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.5);
+      border: 1px solid rgba(255, 255, 255);
+      border-radius: 2px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.75);
+      border: 1px solid rgba(255, 255, 255);
+      border-radius: 2px;
+}
 
 #loader {
       position: fixed;
@@ -658,6 +680,8 @@ nav #menu li a:hover {
       visibility: visible;
       opacity: 1;
 }
+  
+
 
 @media(max-width: 729px) {
       #toggle {
